@@ -1,0 +1,115 @@
+<!-- Day 31 Intro to html -- make a webpage -->
+<!-- This is a comment, in between these two sets of symbols -->
+
+<!-- html is hypertext markup language -->
+
+<!DOCTYPE html>
+<!-- every webpage starts with the above line -->
+<!-- html includes tags
+	an <opening-tag> inside of angle bracket
+    and usually a </closing-tag> -- also has a slash after the opening bracket -->
+
+<html>
+	<head>	<!-- The head section is meta-data about your web page -->
+		<title>Iretta Kearse HTML Project</title>
+	</head>
+	<body bgcolor="tan">	<!-- This is where the content of your web page goes -->
+		<!-- Change the background color of this page using a HEX color. Ctl-Shift-P
+		 then type 'color picker' -->
+
+		<!-- Now, let's add a large centered headline -->
+		<h1>All About Prof. Kearse</h1>
+
+		<!-- Let's put some text in a paragraph -->
+		<p>This is a website built for Homework 12 in the course CS1315.<br>
+			CS1315 is a general education course at the Georgia Institute of Technology. 
+		</p>
+
+		<!-- the headline goes from h1 (largest) down to h6 (smallest). -->
+		<!-- medium headline -->
+		<h3> GT SCI Faculty Description</h3>
+
+		<!-- Add an image of yourself to your web page.  -->
+		<img src="irettakearseGT.JPG" width="200" >
+		<!-- src is an attribute and its value is "buzz1.jpg"
+		 Be sure to put your image files in the same folder as index.html -->
+
+		<p>Senior Lecturer<br>College of Computing<br>School of Computing Instruction</p>
+		<!-- Note that <br> does NOT have a closing tag unlike most other tags -->
+
+		<!-- let's add a link to another page -->
+		<!-- the link tag is <a> and the attribute for the webpage is href -->
+		<!-- How do I make a webpage open in a new tab?
+			use the target attribute, with the value "_blank" -->
+		<p>
+		My favorite extracurricular activity is: Loom Knitting .<br>
+		To read a Blog post about it, click the icon!
+		</p>
+
+		<!-- Can we make an image be a weblink?
+			Yes, just put an <img> inside of the <a> tag instead of text. -->
+		<p><a href="https://loomknit.com/2024/02/26/thinking-of-getting-started-with-loom-knitting/" target="_blank"> <img src="https://loomknit.com/wp-content/uploads/2019/05/cropped-loomknitgirl-logo-1.png"></a></p>
+
+		<!-- Can we link a YouTube video?
+		Yes, use Share and Embed from the video on YouTube-->
+		<p>
+		This is a fun and simple project by my favorite YouTuber: <a href="https://www.youtube.com/@LoomaHat" target="_blank">Looma Hat</a><br>
+		</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vqc5NDXu1CU?si=jKBsaCdxnlKRIpjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+		<!-- Add a bullet list -->
+		<!-- this is called an unordered list, <ul>
+			and every line in the bullet list is a list item, <li> 
+		-->
+		<p>
+		Why Loom  Knitting:
+		<ul>
+			<li>It has a very low cost of entry (less than $25).</li>
+			<li>It is an ideal choice for beginners (2 basic stitches).</li>
+			<li>It requires minimal dexterity and coordination (suitable for all ages and abilities). </li>
+		</ul>
+	</p>
+
+		<!-- Add a numbered list -->
+		<!-- there is called an ordered list, <ol>
+			which adds sequence numbers to each list item, <li>
+		-->
+		<p>
+		The supplies you need to get strated:
+		<ol>
+			<li>A Loom</li>
+			<li>A Loom Hook</li>
+			<li>A skein of Yarn</li>
+			<li>A sharp pair of Scissors</li>
+			<li>A Row or Stitch Counter</li>
+		</ol>
+		</p>
+		<!-- Add a 3x3 table -->
+		<!-- Tables - grids of rows and columns
+			Tags are:
+			<table>
+				<th> -- optional, a table header, used for the top row
+				<tr> -- a table row
+				<td> -- a table data (column in a row)
+		-->
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+	</body>
+</html>
+
